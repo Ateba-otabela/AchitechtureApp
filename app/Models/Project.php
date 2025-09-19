@@ -3,6 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\ProjectImage;
+use App\Models\Message;
+use App\Models\User;
 
 class Project extends Model
 {
