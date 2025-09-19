@@ -164,6 +164,14 @@
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                     </div>
                 </div>
+               @if ($errors->any())
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li style="color: red">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
+
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
@@ -465,6 +473,13 @@
 
 
     <!-- Appointment Start -->
+         @if ($errors->any())
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li style="color: red">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                @endif
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -497,48 +512,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3">
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <select class="form-select" style="height: 55px;">
-                                <option selected>Choose Service</option>
-                                <option value="1">Service 1</option>
-                                <option value="2">Service 2</option>
-                                <option value="3">Service 3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="date" id="date" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control datetimepicker-input"
-                                    placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                <form action="{{ route('contact.store') }}" method="POST">
+                    @csrf
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" style="height: 55px;">
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="time" id="time" data-target-input="nearest">
-                                <input type="text"
-                                    class="form-control datetimepicker-input"
-                                    placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" style="height: 55px;">
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                            <div class="col-12 col-sm-12">
+                                <select name="book_through" class="form-select mb-2" style="height: 55px;" required>
+                                    <option value="" disabled selected>Choose Service</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                    <option value="email">Email</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
+
         </div>
     </div>
     <!-- Appointment End -->
