@@ -519,61 +519,53 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Post project -->
-      <div class="container-xxl py-5" id="project">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="section-title">New project</h4>
-                    <h1 class="display-5 mb-4">Add a new project to boost your users confident</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="row g-4 d-flex">
-                     
-                      <div class="d-flex gap-4">
-                          <div class="col-12">
-                                    <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
-                                        @csrf
-                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
-                                            <div class="row g-3">
-                                                <div class="col-12 col-sm-6">
-                                                    <input type="text" class="form-control" name="title" placeholder="Your Title" style="height: 55px;">
-                                                </div>
-                                                <div class="col-12 col-sm-6">
-                                                    <input type="text" class="form-control" name="description" placeholder="Your project description" style="height: 55px;">
-                                                </div>
-                                                <div class="col-12 col-sm-12">
-                                                    <select name="book_through" class="form-select mb-2" style="height: 55px;" required>
-                                                        <option value="" disabled selected>Choose your project status</option>
-                                                        <option value="whatsapp">Pending</option>
-                                                        <option value="email">Completed</option>
-                                                        <option value="email">Delivered</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-12 col-sm-12">
-                                                    <label for="image">Project Image</label><br>
-                                                     <input type="file" name="images[]" multiple accept="image/*" required> 
-                                                    <small class="text-danger">Support: jpg,jpeg,png,gif|max:2Mb</small>
-                                                </div>
-                                             
-                                                <div class="col-12">
-                                                    <button class="btn btn-primary w-100 py-3" type="submit">Save project</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </form>
+   <!-- Post project -->
+<div class="container-xxl py-5" id="project">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Left side: Form -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="section-title">New project</h4>
+                <h1 class="display-5 mb-4">Add a new project to boost your users' confidence</h1>
+                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+                <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" name="title" placeholder="Your Title" style="height: 55px;">
                         </div>
-                        <div class="col-6">
-                            <img src="{{ asset('arkitektur-1.0.0/img/project-3.jpg') }}" alt=""  style="border-radius:15px;">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" name="description" placeholder="Your project description" style="height: 55px;">
                         </div>
-                      </div>
-                       
+                        <div class="col-12">
+                            <select name="book_through" class="form-select mb-2" style="height: 55px;" required>
+                                <option value="" disabled selected>Choose your project status</option>
+                                <option value="whatsapp">Pending</option>
+                                <option value="email">Completed</option>
+                                <option value="email">Delivered</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="image">Project Image</label><br>
+                            <input type="file" name="images[]" multiple accept="image/*" required> 
+                            <small class="text-danger">Support: jpg,jpeg,png,gif | max:2Mb</small>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Save project</button>
+                        </div>
                     </div>
-                </div>
-               
+                </form>
             </div>
 
+            <!-- Right side: Image -->
+            <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.5s">
+                <img src="{{ asset('arkitektur-1.0.0/img/project-3.jpg') }}" alt="" class="img-fluid rounded-3">
+            </div>
         </div>
     </div>
+</div>
+
     <!-- Appointment End -->
 
 
