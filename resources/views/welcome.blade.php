@@ -81,20 +81,11 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-0 m-0">
-                        <a href="feature.html" class="dropdown-item">Our Features</a>
-                        <a href="project.html" class="dropdown-item">Our Projects</a>
-                        <a href="team.html" class="dropdown-item">Team Members</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+              
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a>
+            <a href="" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
+            <a href="#project" class="btn btn-primary py-2 px-3 d-none d-lg-block">New project</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -132,8 +123,8 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative" data-dot="<img src='{{asset('img/carousel-3.jpg')}}'>">
-                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='{{asset('arkitektur-1.0.0/img/carousel-3.jpg')}}'>">
+                <img class="img-fluid" src="arkitektur-1.0.0/img/carousel-3.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -158,24 +149,26 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="{{ asset('img/icons/icon-2.png')}}" alt="Icon">
+                            <img src="{{ asset('arkitektur-1.0.0/img/icons/icon-2.png')}}" alt="Icon">
                         </div>
                         <h3 class="mb-3">Design Approach</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                     </div>
                 </div>
-               @if ($errors->any())
+         
+               
+                @if ($errors->any())
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li style="color: red">{{ $error }}</li>
                         @endforeach
                     </ul>
                 @endif
-
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="{{ asset('img/icons/icon-3.png')}}" alt="Icon">
+                            <img src="{{ asset('arkitektur-1.0.0/img/icons/icon-3.png')}}" alt="Icon">
                         </div>
                         <h3 class="mb-3">Innovative Solutions</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -184,7 +177,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="fact-item text-center bg-light h-100 p-5 pt-0">
                         <div class="fact-icon">
-                            <img src="{{ asset('img/icons/icon-4.png') }}" alt="Icon">
+                            <img src="{{ asset('arkitektur-1.0.0/img/icons/icon-4.png') }}" alt="Icon">
                         </div>
                         <h3 class="mb-3">Project Management</h3>
                         <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -202,8 +195,8 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="{{ asset('img/about-1.jpg') }}" alt="">
-                            <img class="mb-4" src="{{asset('img/icons/icon-8.png')}}" alt="Icon">
+                        <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/about-1.jpg') }}" alt="">
+                            <img class="mb-4" src="{{asset('arkitektur-1.0.0/img/icons/icon-8.png')}}" alt="Icon">
                             <h3 class="mb-3">Interior Design</h3>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                             <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
@@ -212,9 +205,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="{{asset('img/service-5.jpg')}}" alt="">
+                        <img class="bg-img" src="{{asset('arkitektur-1.0.0/img/service-5.jpg')}}" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="{{ asset('img/icons/icon-9.png') }}" alt="Icon">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-9.png') }}" alt="Icon">
                             <h3 class="mb-3">Renovation</h3>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                             <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
@@ -223,9 +216,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="{{ asset('img/service-6.jpg')}}" alt="">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-6.jpg')}}" alt="">
                         <div class="service-text p-5">
-                            <img class="mb-4" src="{{ asset('img/icons/icon-10.png') }}" alt="Icon">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-10.png') }}" alt="Icon">
                             <h3 class="mb-3">Construction</h3>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                             <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
@@ -249,7 +242,7 @@
                     <div class="row g-4">
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="{{ asset('img/icons/icon-2.png')}}" alt="Icon">
+                                <img class="flex-shrink-0" src="{{ asset('arkitektur-1.0.0/img/icons/icon-2.png')}}" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Design Approach</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -258,7 +251,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="{{ asset('img/icons/icon-3.png')}}" alt="Icon">
+                                <img class="flex-shrink-0" src="{{ asset('arkitektur-1.0.0/img/icons/icon-3.png')}}" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Innovative Solutions</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -267,7 +260,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-flex align-items-start">
-                                <img class="flex-shrink-0" src="{{asset('img/icons/icon-4.png')}}" alt="Icon">
+                                <img class="flex-shrink-0" src="{{asset('arkitektur-1.0.0/img/icons/icon-4.png')}}" alt="Icon">
                                 <div class="ms-4">
                                     <h3>Project Management</h3>
                                     <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
@@ -278,8 +271,8 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="feature-img">
-                        <img class="img-fluid" src="{{ asset('img/about-2.jpg')}}" alt="">
-                        <img class="img-fluid" src="{{ asset('img/about-1.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/about-2.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/about-1.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -318,12 +311,12 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('img/project-1.jpg')}}"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{asset('arkitektur-1.0.0/img/project-1.jpg')}}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                                    <h1 class="mb-3">15 Years Of Experience In Architecture Industry</h1>
                                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
@@ -336,12 +329,12 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-2.jpg"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('arkitektur-1.0.0/img/project-2.jpg') }}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h1 class="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                                    <h1 class="mb-3">15 Years Of Experience In Architecture Industry</h1>
                                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Design Approach</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
@@ -354,7 +347,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.jpg"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('arkitektur-1.0.0/img/project-3.jpg')}}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
@@ -372,7 +365,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-4.jpg"
+                                        <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('arkitektur-1.0.0/img/project-4.jpg')}}"
                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
@@ -405,7 +398,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/team-1.jpg')}}" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -421,7 +414,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('arkitektur-1.0.0/img/team-2.jpg')}}" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -437,7 +430,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/team-3.jpg')}}" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -453,7 +446,7 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/team-4.jpg') }}" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -553,17 +546,17 @@
                 <h1 class="display-5 mb-4">Thousands Of Customers Who Trust Us And Our Services</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-1.jpg' alt=''>">
                     <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-2.jpg' alt=''>">
                     <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
                 </div>
-                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-3.jpg' alt=''>">
                     <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
                     <h3>Client Name</h3>
                     <span class="text-primary">Profession</span>
@@ -573,6 +566,91 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- Post project -->
+      <div class="container-xxl py-5" id="project">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title">New project</h4>
+                    <h1 class="display-5 mb-4">Add a new project to boost your users confident</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="row g-4 d-flex">
+                     
+                      <div class="d-flex gap-4">
+                          <div class="col-12">
+                                    <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="row g-3">
+                                                <div class="col-12 col-sm-6">
+                                                    <input type="text" class="form-control" name="title" placeholder="Your Title" style="height: 55px;">
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <input type="text" class="form-control" name="description" placeholder="Your project description" style="height: 55px;">
+                                                </div>
+                                                <div class="col-12 col-sm-12">
+                                                    <select name="book_through" class="form-select mb-2" style="height: 55px;" required>
+                                                        <option value="" disabled selected>Choose your project status</option>
+                                                        <option value="whatsapp">Pending</option>
+                                                        <option value="email">Completed</option>
+                                                        <option value="email">Delivered</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 col-sm-12">
+                                                    <label for="image">Project Image</label><br>
+                                                     <input type="file" name="images[]" multiple accept="image/*" required> 
+                                                    <small class="text-danger">Support: jpg,jpeg,png,gif|max:2Mb</small>
+                                                </div>
+                                             
+                                                <div class="col-12">
+                                                    <button class="btn btn-primary w-100 py-3" type="submit">Save project</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('arkitektur-1.0.0/img/project-3.jpg') }}" alt=""  style="border-radius:15px;">
+                        </div>
+                      </div>
+                       
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Testimonial</h4>
+                <h1 class="display-5 mb-4">Thousands Of Customers Who Trust Us And Our Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-2.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='arkitektur-1.0.0/img/testimonial-3.jpg' alt=''>">
+                    <p class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+     <!-- End of post project -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">

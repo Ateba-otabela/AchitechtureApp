@@ -23,7 +23,7 @@ class ContactController extends Controller
     $contact = Contact::create($validated);
 
     if ($validated['book_through'] === 'whatsapp') {
-        $whatsappNumber = "237682090879"; 
+        $whatsappNumber = "237658991839"; 
         $message = urlencode("Hello, my name is {$validated['name']}. {$validated['message']}");
         return redirect()->away("https://wa.me/{$whatsappNumber}?text={$message}");
     }

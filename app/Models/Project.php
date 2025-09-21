@@ -10,10 +10,10 @@ use App\Models\User;
 class Project extends Model
 {
      protected $fillable = [
-        'admin_id',
         'title',
         'description',
         'status',
+        
     ];
 
     // Belongs to Admin
