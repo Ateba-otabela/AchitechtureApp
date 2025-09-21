@@ -7,7 +7,13 @@ use App\Models\ProjectImage;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
+
 {
+
+    public function show(Request $request){
+        
+    }
+
     public function store(Request $request)
   
             {
