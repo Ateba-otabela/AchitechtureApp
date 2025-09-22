@@ -381,8 +381,8 @@
                                     @foreach ($project->images as $image)
                                         <div class="position-relative h-100 mb-3">
                                             <img class="position-absolute img-fluid w-100 h-100" 
-                                                 src="{{ asset('storage/' . $image->image_path) }}"
-                                                 style="object-fit: cover;" alt="">
+                                                 src="{{ asset('storage' . $image->image_path) }}"
+                                                 style="object-fit: cover;" alt="hello i am testing ">
                                         </div>
                                     @endforeach
                                 </div>
