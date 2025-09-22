@@ -47,8 +47,8 @@
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
-                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
+                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+237 678 805 311</a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>blaizoneba@gmail.com</a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -78,13 +78,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
               
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#appointment" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
+            <a href="#appointment" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
             <a href="#project" class="btn btn-primary py-2 px-3 d-none d-lg-block">New project</a>
         </div>
     </nav>
@@ -188,15 +188,52 @@
     </div>
     <!-- Facts End -->
 
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
+<!-- service -->
+    <div class="container-xxl py-5" id="services">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="{{ asset('arkitektur-1.0.0/img/about-1.jpg') }}" alt="">
-                            <img class="mb-4" src="{{asset('arkitektur-1.0.0/img/icons/icon-8.png')}}" alt="Icon">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Our Services</h4>
+                <h1 class="display-5 mb-4">We Focused On Modern Architecture And Interior Design</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-1.jpg') }}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-5.png') }}" alt="Icon">
+                            <h3 class="mb-3">Architecture</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-2.jpg') }}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-6.png') }}" alt="Icon">
+                            <h3 class="mb-3">3D Animation</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-3.jpg') }}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-7.png') }}" alt="Icon">
+                            <h3 class="mb-3">House Planning</h3>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-4.jpg') }}" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-8.png') }}" alt="Icon">
                             <h3 class="mb-3">Interior Design</h3>
                             <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
                             <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
@@ -205,7 +242,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="{{asset('arkitektur-1.0.0/img/service-5.jpg')}}" alt="">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-5.jpg') }}" alt="">
                         <div class="service-text p-5">
                             <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-9.png') }}" alt="Icon">
                             <h3 class="mb-3">Renovation</h3>
@@ -216,7 +253,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex position-relative text-center h-100">
-                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-6.jpg')}}" alt="">
+                        <img class="bg-img" src="{{ asset('arkitektur-1.0.0/img/service-6.jpg') }}" alt="">
                         <div class="service-text p-5">
                             <img class="mb-4" src="{{ asset('arkitektur-1.0.0/img/icons/icon-10.png') }}" alt="Icon">
                             <h3 class="mb-3">Construction</h3>
@@ -230,6 +267,36 @@
     </div>
     <!-- Service End -->
 
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="{{asset('arkitektur-1.0.0/img/carousel-3.jpg') }}" alt="" style="border-radius:20px">
+                        <img class="img-fluid" src="{{asset('arkitektur-1.0.0/img/carousel-2.jpg') }}" alt=""style="border-radius:10px">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h4 class="section-title">About Us</h4>
+                    <h1 class="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                            <h1 class="display-1 mb-n2" data-toggle="counter-up">15</h1>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Years</h3>
+                            <h3>Working</h3>
+                            <h3 class="mb-0">Experience</h3>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Feature Start -->
     <div class="container-xxl py-5">
@@ -426,7 +493,7 @@
                         @endforeach
                     </ul>
                 @endif
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="appointment">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -603,9 +670,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Mayor Street, BUEA, CAMEROON</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+237678805311</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>blaizoneba@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -623,11 +690,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#contact">Contact Us</a>
+                    <a class="btn btn-link" href="#services">Our Services</a>
+                    <a class="btn btn-link" href="#">Terms & Condition</a>
+                    <a class="btn btn-link" href="#">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-light mb-4">Newsletter</h3>
@@ -647,8 +714,8 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        <br> Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        Designed By <a href="https://htmlcodex.com">ATEBA OTABELA JEAN PATRICE</a>
+                        <br> Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">MAIDUGOU JEAN</a>
                     </div>
                 </div>
             </div>
