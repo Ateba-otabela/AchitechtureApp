@@ -4,6 +4,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProjectController;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 
 
@@ -21,5 +23,8 @@ Route::get('/', function () {
 Route::get('/project', function () {
     return view('project')->name('project');
 });
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/project', [ProjectController::class, 'store'])->name('project.store');

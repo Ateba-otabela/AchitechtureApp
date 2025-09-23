@@ -84,11 +84,71 @@
               
                 <a href="#appointment" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="#appointment" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
-            <a href="#project" class="btn btn-primary py-2 px-3 d-none d-lg-block">New project</a>
+            @auth
+                <a href="#appointment" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
+                <a href="#project" class="btn btn-primary py-2 px-3 d-none d-lg-block">New project</a>
+            @endauth
+            @guest
+                <button href="#appointment" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block"
+                    data-bs-toggle="modal" data-bs-target="#signupModal"
+                >Sign up</button>
+                <button  class="btn btn-primary py-2 px-3 d-none d-lg-block" 
+                    data-bs-target="#loginModal" data-bs-toggle="modal"
+                >Sign In</a>
+            @endguest
+           
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Sign up  Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Create an Account</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="{{ route('register')}}" method="POST">
+          @csrf
+          <input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
+          <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+          <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+          <input type="password" name="password_confirmation" class="form-control mb-3" placeholder="Confirm Password" required>
+          <button type="submit" class="btn btn-success w-100">Sign Up</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="{{ route('login')}}" method="POST">
+          @csrf
+          <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+          <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
     <!-- Carousel Start -->
@@ -701,7 +761,10 @@
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <form action="{{ route('logout')}}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignOut</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -715,7 +778,7 @@
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         Designed By <a href="https://htmlcodex.com">ATEBA OTABELA JEAN PATRICE</a>
-                        <br> Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">MAIDUGOU JEAN</a>
+                        <br> Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">MAIDUGU JEAN</a>
                     </div>
                 </div>
             </div>
