@@ -83,6 +83,7 @@
                 <a href="#services" class="nav-item nav-link">Services</a>
               
                 <a href="#appointment" class="nav-item nav-link">Contact</a>
+                
             </div>
             @auth
                 @can('is-admin')
@@ -443,8 +444,8 @@
                                     @foreach ($project->images as $image)
                                         <div class="position-relative h-100 mb-3">
                                             <img class="position-absolute img-fluid w-100 h-100" 
-                                                 src="{{ asset('storage' . $image->image_path) }}"
-                                                 style="object-fit: cover;" alt="hello i am testing ">
+                                                 src="{{ asset('storage/' . $image->image_path) }}"
+                                                 style="object-fit: cover;" alt="project image ">
                                         </div>
                                     @endforeach
                                 </div>
