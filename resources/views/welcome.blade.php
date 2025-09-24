@@ -91,14 +91,17 @@
                 @endcan
                 <a href="#appointment" class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block">Appointment</a>
             @endauth
-            @guest
-                <button class="btn btn-primary py-2 mx-3  px-4 d-none d-lg-block"
-                    data-bs-toggle="modal" data-bs-target="#signupModal"
-                >Sign up</button>
-                <button  class="btn btn-primary py-2 px-3 d-none d-lg-block" 
-                    data-bs-target="#loginModal" data-bs-toggle="modal"
-                >Sign In</a>
-            @endguest
+          @guest
+            <button class="btn btn-primary py-2 mx-3 px-4 d-block d-lg-inline-block"
+                data-bs-toggle="modal" data-bs-target="#signupModal">
+                Sign up
+            </button>
+            <button class="btn btn-primary py-2 px-3 d-block d-lg-inline-block" 
+                data-bs-toggle="modal" data-bs-target="#loginModal">
+                Sign In
+            </button>
+        @endguest
+
            
         </div>
     </nav>
@@ -119,6 +122,7 @@
           @csrf
           <input type="text" name="name" class="form-control mb-3" placeholder="Full Name" required>
           <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+          <input type="number" name="whatsapp_number" class="form-control mb-3" placeholder="Wattsap number" required>
           <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
           <input type="password" name="password_confirmation" class="form-control mb-3" placeholder="Confirm Password" required>
           <button type="submit" class="btn btn-success w-100">Sign Up</button>

@@ -16,7 +16,9 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6|confirmed',
+            'whatsapp_number' => 'required'
         ]);
+        
 
         $data['password'] = bcrypt($data['password']);
         $user = User::create($data);
